@@ -14,5 +14,9 @@
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/config": "^3.3.1",
+    "config": "^3.3.9"
   }
 }

@@ -1,0 +1,7 @@
+{
+    "DBUri": "DBUri",
+    "JWT_SECRET": "JWT_SECRET",
+    "NODE_ENV": "NODE_ENV",
+    "PORT": "PORT",
+    "API_VERSION": "API_VERSION"
+}

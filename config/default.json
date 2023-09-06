@@ -1,0 +1,8 @@
+{
+    "DBUri": "postgresql://postgres:eUapH6slW5RlcRodLOeO@containers-us-west-185.railway.app:6501/railway",
+    "JWT_SECRET": "defsec001",
+    "NODE_ENV": "local-dev",
+    "PORT": "3000",
+    "API_VERSION": "v1"
+
+}

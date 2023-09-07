@@ -1,0 +1,23 @@
+name: Deployment
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Copying files
+      run: |
+        cp service2/mongodb.types.ts service1/mongodb.types.ts
+        cp service2/graphql.types.ts service1/graphql.types.ts
+
+    # Insert the necessary deployment steps for your GraphQL service
+    - name: Deployment
+      run: |
+        cd service1
+        npm install
+        # Add additional steps here to deploy your service

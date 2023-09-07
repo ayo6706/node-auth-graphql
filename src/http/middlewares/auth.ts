@@ -1,8 +1,8 @@
 import { StrategyOptions, ExtractJwt, Strategy } from "passport-jwt";
 import { NextFunction, Response } from "express";
 import config from "config";
-import UserModel from "../../repository/user/model.mongo";
-import User from "../../repository/user/model";
+import UserModel from "../../repository/user/mongo/model.mongo";
+import User from "../../repository/user/graphql/model";
 import AuthRequest from "../../@types/authRequest";
 
 const JWT_SECRET = config.get<string>("JWT_SECRET");

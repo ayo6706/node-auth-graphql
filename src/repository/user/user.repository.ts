@@ -1,4 +1,4 @@
-import User from "./model";
+import User from "./graphql/model";
 
 export default interface UserRepository {
     createUser(user: User): Promise<User>

@@ -1,8 +1,8 @@
 /* eslint-disable consistent-return */
 import { Schema, model } from "mongoose";
 import bcrypt from "bcrypt";
-import User from "./model";
-import DB_NAMES from "../../helpers/constants";
+import User from "../graphql/model";
+import DB_NAMES from "../../../helpers/constants";
 
 const schema = new Schema<User>({
     firstname: { type: String, required: true },

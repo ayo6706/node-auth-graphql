@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import config from "config";
-import User from "../../repository/user/model";
+import User from "../../repository/user/graphql/model";
 import {
     UserDto, UserRegistrationDto, UserRegistrationObjDto
 } from "./user.dto";

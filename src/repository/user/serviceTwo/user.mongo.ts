@@ -1,8 +1,8 @@
-import UserModel from "./mongo/model.mongo";
-import User from "./graphql/model";
-import UserRepository from "./user.repository";
-import { log } from "../log";
-import DatabaseError from "../../errors/database";
+import UserModel from "./model.mongo";
+import User from "../serviceOne/model";
+import UserRepository from "../user.repository";
+import { log } from "../../log";
+import DatabaseError from "../../../errors/database";
 
 export default class UserRepositoryMongo implements UserRepository {
     async createUser(user: User): Promise<User> {

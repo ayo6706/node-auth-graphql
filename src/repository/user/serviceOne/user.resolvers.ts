@@ -1,4 +1,4 @@
-import UserService from '../../services/user';
+import UserService from '../../../services/user';
 
 const resolvers = {
   Mutation: {

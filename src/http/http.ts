@@ -16,8 +16,8 @@ import UserHandler from "./handlers/user/user";
 import SwaggerHandler from "./handlers/swagger/swagger";
 import { ApolloServer } from "apollo-server-express";
 import { ApolloServerPluginDrainHttpServer } from "apollo-server-core";
-import Schema from "../repository/user/model.graphql";
-import resolvers from "../repository/user/user.resolvers";
+import Schema from "../repository/user/serviceOne/model.graphql";
+import resolvers from "../repository/user/serviceOne/user.resolvers";
 
 const apiPath = "/api";
 const NODE_ENV = config.get<string>("NODE_ENV");

@@ -1,4 +1,4 @@
-import User from "./graphql/model";
+import User from "./serviceOne/model";
 
 export default interface UserRepository {
     createUser(user: User): Promise<User>

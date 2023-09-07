@@ -3,13 +3,15 @@ import gql from "graphql-tag";
 export default gql`
   type User {
     id: ID!
-    name: String!
     email: String!
+    firstname: String!
+    lastname: String!
+    password: String!
   }
 
   type Mutation {
-    signup(name: String!, email: String!, password: String!): String
-    login(email: String!, password: String!): String
+    signup(user: User): User
+    login(email: String!, password: String!): User
   }
 
   type Query {

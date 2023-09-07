@@ -7,7 +7,7 @@ import RepositoryLogger from "./repository/log";
 import ServicesLogger from "./services/log";
 import HttpLogger from "./http/log";
 import UserService from "./services/user";
-import UserRepositoryMongo from "./repository/user/user.mongo";
+import UserRepositoryMongo from "./repository/user/serviceTwo/user.mongo";
 import mongoose from "mongoose";
 
 const RepositoryLoggerID = "DB";
